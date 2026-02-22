@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCart | E-Commerce Site</title>
+     <link rel="shortcut icon" href="/Assets/swift_logo.png" type="image/x-icon">
+
+    <!-- font integration -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com"
+ crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,
+    100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,
+     100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+      rel="stylesheet">
+      <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+     <!-- font-Awesome -->
+      <link rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/
+       font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/
+        kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- daisyui and tailwind -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="lg:px-52">
+        <div class="navbar bg-base-100 shadow-sm ">
+  <div class="navbar-start">
+    
+    <a class="btn btn-ghost text-3xl font-bold text-blue-700">SwiftCart</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 text-lg font-bold">
+      <li><a><i class="fa-solid fa-house"></i>Home</a></li>
+      <li>
+       <a>Products</a>
+      </li>
+      <li><a>About</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="p-4"><i class="fa-solid fa-cart-shopping text-lg"></i></a>
+     <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+       <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-40 sm:w-52 
+        p-2 shadow font-bold
+         right-0">
+        <li><a>Home</a></li>
+        <li>
+          <a>Products</a>
+         
+        </li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    </header>
+    <section
+  class="relative h-[80vh] bg-cover bg-center flex items-center"
+  style="background-image: url('./Assets/banner-image.png')"
+>
+  <div class="absolute inset-0 bg-gradient-to-r from-slate-900/100 to-black/40"></div>
+  <div class=" relative lg:max-w-xl lg:ml-48 text-white">
+    <h1 class="ml-5 text-3xl lg:text-5xl font-bold mb-4">
+      Best Collection For You
+    </h1>
+
+    <p class="ml-5 mb-6 w-68 lg:w-8/12 text-gray-300 text-lg font-thin">
+      Discover the latest trends in fashion, electronics, and more.
+      Shop with confidence and style at SwiftCart.
+    </p>
+
+    <button class="py-2 ml-5 px-7 lg:py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md font-light">
+      Shop Now
+    </button>
+  </div>
+</section>
+<section class="py-16 bg-red-50">
+  <div class="text-center mb-12 px-4">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
+      Why Choose Us
+    </h2>
+    <p class="mt-3 text-sm sm:text-base font-semibold w-56 lg:w-full text-gray-500 lg:max-w-xl mx-auto">
+      We provide the best shopping experience with top-notch services.
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 justify-items-center">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <div class="card bg-base-100 h-48 mt-4 w-56 lg:mt-0 lg:w-full">
+      <div class="badge badge-xl w-12 h-10 shadow-lg relative left-5 bottom-4">
+       <div class="absolute">
+         <i class="fa-solid fa-truck text-center p-2
+          text-blue-800 w-10 h-8 rounded-md bg-slate-200 text-xl"></i>
+       </div>
+      </div>
+        
+     
+      <div class="card-body">
+        <h2 class="card-title font-bold">Fast Delivery</h2>
+        <p class="lg:w-38">Get your orders delivered to your doorstop quickly and efficiently.</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 h-48 mt-8 lg:mt-0 w-56 lg:w-full">
+      <div class="badge badge-xl w-12 h-10 shadow-lg relative left-5 bottom-4">
+       <div class="absolute">
+         <i class="fa-solid fa-headset text-center p-2
+          text-blue-800 w-10 h-8 rounded-md bg-slate-200 text-xl"></i>
+       </div>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title font-bold">24/7 Support</h2>
+        <p class="lg:w-48">Our support team is available around the clock assist to you.</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 h-48 w-56 mt-8 lg:mt-0 lg:w-full">
+      <div class="badge badge-xl w-12 h-10 shadow-lg relative left-5 bottom-4">
+       <div class="absolute">
+         <i class="fa-solid fa-shield text-center p-2
+          text-blue-800 w-10 h-8 rounded-md bg-slate-200 text-xl"></i>
+       </div>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title font-bold">Secure Payment</h2>
+        <p class="lg:w-38">Experience safe and secure transactions with our encrypted payment systems.</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 h-48 mt-8 lg:mt-0 w-56 lg:w-full">
+      <div class="badge badge-xl w-12 h-10 shadow-lg relative left-5 bottom-4">
+       <div class="absolute">
+         <i class="fa-solid fa-arrows-spin text-center p-2
+          text-blue-800 w-10 h-8 rounded-md bg-slate-200 text-xl"></i>
+       </div>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title font-bold">Easy Returns</h2>
+        <p class="lg:w-38">Not satisfied? Return your products easily within 30 days.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+
+</body>
+</html>
