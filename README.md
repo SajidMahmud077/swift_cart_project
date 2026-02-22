@@ -16,7 +16,7 @@ This project helped me understand how real e-commerce websites structure their p
 
 # What I Used
 
-*HTML5
+* HTML5
 * CSS3
 * Tailwind CSS 
 * Font Awesome 
